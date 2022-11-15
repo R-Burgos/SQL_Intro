@@ -23,4 +23,4 @@ SELECT AVG(price) FROM products;
 -- find all Geek Squad employees who don't have a middle initial
 SELECT * FROM employees WHERE Title = 'Geek Squad' AND middleinitial IS NULL;
 -- find all products from the products table whose stock level is in the range -- of 500 to 1200. Order by Price from least to greatest. Hint: Use the between keyword
-SELECT * FROM products WHERE StockLevel BETWEEN 500 AND 1200 ORDER BY price;
+SELECT * FROM products WHERE StockLevel BETWEEN 500 AND 1200 ORDER BY price ASC;
